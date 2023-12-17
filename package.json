@@ -1,0 +1,27 @@
+{
+    "name": "ahj",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "prestart": "npm install",
+      "start": "pm2 start server.js --watch --no-daemon --name \"HW-chat\"",
+      "watch": "pm2 start server.js --watch --no-daemon --name \"HW-chat\"",
+      "stop": "pm2 stop \"HW-chat\"",
+      "list": "pm2 list"
+    },
+    "author": "SVVerbovskiy",
+    "license": "ISC",
+    "dependencies": {
+      "@koa/cors": "^5.0.0",
+      "koa": "^2.14.2",
+      "koa-body": "^6.0.1",
+      "koa-router": "^12.0.1",
+      "pm2": "^5.3.0",
+      "uuid": "^9.0.1",
+      "ws": "^8.15.1"
+    },
+    "engines": {
+      "node": "18.x"
+    }
+  }
